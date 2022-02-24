@@ -1,0 +1,74 @@
+:root{
+    
+}
+
+*{margin: 0; padding: 0;}
+ul,li{list-style: none;}
+a {text-decoration: none;}
+
+/* #quick { 
+    position: fixed; 
+    top: 50%; 
+    right: 0; 
+    transform: translateY(-50%) ; 
+    width: 50px;
+    border :1px solid black}  */
+
+#quick  li:not(:last-child) {border-bottom: 1px solid #222;} 
+
+/* #quick  li a {display: flex; width: 130px; line-height: 50px; transition: margin 0.5s;}
+#quick  li:hover a{margin-left: -80px; } */
+
+#quick  li i{width: 50px;}
+
+#quick    li.quick1  a {background-color: aqua;} 
+#quick    li.quick2  a {background-color: bisque;} 
+#quick    li.quick3  a {background-color: blueviolet;} 
+
+/*왼쪽에 붙기*/
+/* #quick { 
+    position: fixed; 
+    top: 50%; 
+    right: 100; 
+    transform: translateY(-50%) ; 
+    width: 50px;
+    border :1px solid black} 
+#quick  li a {
+    display: flex; flex-direction: row-reverse; 
+    width: 130px; line-height: 50px; transition: margin 0.5s;
+    margin-left: -80px;}
+#quick  li:hover a{margin-left: 0;} */
+
+/*위에서 내려오기*/
+/* #quick { 
+    position: fixed; 
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%) ; 
+    height: 50px;
+    border :1px solid black}
+ #quick ul{display: flex;}
+
+#quick  li a {
+    display: flex; flex-direction: column-reverse; 
+    height: 130px; line-height: 50px; transition: margin 0.5s;
+    margin-top: -80px;}
+#quick  li:hover a{margin-top: 0;} */
+
+/*밑에서 올라오기*/
+#quick { 
+    position: fixed; 
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%) ; 
+    height: 50px;
+    border :1px solid black}
+ #quick ul{display: flex;}
+
+#quick  li a {
+    display: flex; flex-direction: column; 
+    height: 130px; line-height: 50px; transition: margin 0.5s;
+    margin-top: 0px;}
+#quick  li:hover a{margin-top: -80px;}
+
+#quick li span{ writing-mode: vertical-lr;}
